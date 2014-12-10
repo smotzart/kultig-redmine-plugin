@@ -1,0 +1,13 @@
+span.extra-fields {
+  margin-left: 15px;
+  color: #666666;
+}
+
+span.extra-fields span.field-title {
+  font-weight: bold;
+  color: #FF6666;
+}
+
+span.extra-fields span.field-value {
+  color: #FF6666;
+}
