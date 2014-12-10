@@ -5,4 +5,4 @@ This plugin makes your Redmine 146% much KULTIG than it was before!
 Features list:
 * default projects list gets extended with information from custom fields.
 
-To install plugin just clone this repository in your ```/plugins``` folder, rename the pugin folder into ```kultig``` and restart Redmine.
+To install plugin just clone this repository in your <tt>/plugins</tt> folder, rename the pugin folder into <tt>kultig</tt> and restart Redmine.
