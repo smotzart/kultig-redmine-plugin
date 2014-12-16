@@ -8,6 +8,10 @@ module ProjectsHelperPatch
       # Renders the projects index
       def render_project_hierarchy(projects)
         res = stylesheet_link_tag 'projects_list_extra_fields', :plugin => 'kultig'
+        res << javascript_include_tag('jquery_cookie', :plugin => 'kultig')
+        res << javascript_include_tag('jquery_treeview', :plugin => 'kultig')
+        res << javascript_include_tag('projects_list_collapse', :plugin => 'kultig')
+
         res << render_project_nested_lists(projects) do |project|
           s = link_to_project(project, {}, :class => "#{project.css_classes} #{User.current.member_of?(project) ? 'my-project' : nil}")
 

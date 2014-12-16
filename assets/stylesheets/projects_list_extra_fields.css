@@ -11,3 +11,63 @@ span.extra-fields span.field-title {
 span.extra-fields span.field-value {
   color: #FF6666;
 }
+
+#projects-index ul.projects {
+  padding-top: 1em;
+}
+#projects-index ul.projects ul.projects {
+  padding-top: 0;
+}
+#projects-index ul.projects li.child:first-child {
+  margin-top: 0;
+}
+ul.projects .description p {
+  margin: 0;
+}
+ul.projects .description p + p {
+  margin-top: 1em;
+}
+.treeview, .treeview ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.treeview ul {
+  background-color: white;
+  margin-top: 1em;
+}
+
+.treeview .hitarea {
+  background: transparent 50% 2px no-repeat;
+  background-image: url(/images/arrow_expanded.png);
+  height: 100%;
+  width: 20px;
+  margin-left: 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.treeview .hitarea:hover,
+.treeview .hitarea:focus {
+  background-color: rgb(238, 238, 238);
+}
+
+/* fix for IE6 */
+* html .hitarea {
+  display: inline;
+  float:none;
+}
+
+.treeview li {
+  margin: 0;
+  padding: 2px 0pt 2px 25px;
+  position: relative;
+  display: block;
+}
+
+.treeview .expandable-hitarea {
+  background-image: url(/images/arrow_collapsed.png);
+}
